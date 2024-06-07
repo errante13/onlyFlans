@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <div class= "container ">
+        <h1 class="text-center">contacto</h1>
+    </div>
+    
+    <div class ="container">
+        <form action="{% url 'contacto' %}" method = "post">
+            {%csrf_token%} 
+
+                <div class="mb-3">
+                    <label for="id_customer_email" class="form-label" >Correo:</label>
+                    <input type="email" class="form-control" name="customer_email" maxlength="320" required="" id="id_customer_email">
+                </div>
+                <div class="mb-3">
+                    <label for="id_customer_name" class="form-label" >Nombre:</label>
+                    <input type="text" class="form-control" name="customer_name" maxlength="64" required="" id="id_customer_name">
+                </div>
+                <div class="mb-3">
+                    <label for="id_message" class="form-label">Mensaje:</label>
+                    <textarea type="text"class="form-control" name="message" required="" id="id_message" rows="4"></textarea>
+                </div>
+                <div class="d-grid gap-2  mx-auto">   
+                    <input type="submit" class="btn btn-primary" value="submit">
+                </div>
+        </form>    
+    </div>
+{% endblock %}
+

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* fuentes (font)*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    margin:0px 10px;
+    padding: 1%;
+    text-align: justify;
+}
+
+.navbar-css{
+    font-size: 1.5em;
+    margin-right: 10em;
+}
+
+.row{
+
+    margin:0 2px;
+}
+
+.card{
+     /* margin:0 0.5px; */
+     height: 30em;
+}
+.img-card{
+    padding: 5px;
+    width: 100%;
+    /* max-width: var(--max); */
+    height: 15rem;
+    object-fit: cover;
+    
+}
+
+#parrafo{
+    display:inline-block;
+    text-align: center;
+    
+}
