@@ -13,6 +13,9 @@ class Flan(models.Model):
     created_ad = models.DateTimeField(auto_now_add=True)
     updated_ad = models.DateTimeField(auto_now=True)
     
+    def __str__(self):
+        return self.name 
+    
 class ContactForm(models.Model):
     contact_form_uuid = models.UUIDField(default = uuid.uuid4,editable = False) 
     customer_email = models.EmailField()
