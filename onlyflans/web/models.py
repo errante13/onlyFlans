@@ -26,3 +26,5 @@ class ContactForm(models.Model):
     created_ad = models.DateTimeField(auto_now_add=True)
     updated_ad = models.DateTimeField(auto_now=True)
     
+    def __str__(self):
+        return self.customer_email 
